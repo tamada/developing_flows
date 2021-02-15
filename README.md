@@ -1,6 +1,6 @@
 # developing_flows
 
-[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing_flows/blob/master/LICENSE) [![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)](https://github.com/tamada/developing_flows/releases/tag/v1.0.0)[![GitHub Discussion](https://img.shields.io/badge/GitHub-Discussions-blue?logo=github)](https://github.com/tamada/developing_flows/discussions)
+[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing_flows/blob/master/LICENSE) [![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)] (https://github.com/tamada/developing_flows/releases/tag/v1.0.0)[![GitHub Discussion](https://img.shields.io/badge/GitHub-Discussions-blue?logo=github)](https://github.com/tamada/developing_flows/discussions)
 
 [![CC-BY-4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
@@ -35,6 +35,7 @@
 * [プログラムを書き始めよう](https://github.com/tamada/developing_flows/blob/main/development.md)
 * [リリースに向けて](https://github.com/tamada/developing_flows/blob/main/shipping.md)
 * [用語](https://github.com/tamada/developing_flows/blob/main/terms.md)
+* [練習問題](https://github.com/tamada/developing_flows/blob/main/exercise.md)
 
 ## このドキュメントについて
 
