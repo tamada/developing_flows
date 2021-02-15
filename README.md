@@ -1,6 +1,8 @@
 # developing_flows
 
-[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing_flows/blob/master/LICENSE) [![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)] (https://github.com/tamada/developing_flows/releases/tag/v1.0.0)[![GitHub Discussion](https://img.shields.io/badge/GitHub-Discussions-blue?logo=github)](https://github.com/tamada/developing_flows/discussions)
+[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing_flows/blob/master/LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)] (https://github.com/tamada/developing_flows/releases/tag/v1.0.0)
+[![GitHub Discussion](https://img.shields.io/badge/GitHub-Discussions-blue?logo=github)](https://github.com/tamada/developing_flows/discussions)
 
 [![CC-BY-4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
