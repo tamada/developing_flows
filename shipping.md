@@ -2,12 +2,21 @@
 
 ソフトウェア開発がある程度落ち着いたら，リリースに向けて，次のことを行う必要がある．
 
-* [バージョンを決める．](#バージョンを決める)
-* [Webサイトを構築する．](#webサイトを構築する)
-* [Dockerfileを用意する．](#dockerfileを用意する)
-* [パッケージマネージャでのインストールを整備する．](#パッケージマネージャでのインストールを整備する)
-* [必要に応じてDOIを発行する．](#必要に応じてdoiを発行する)
-* [リリースを公開する．](#リリースを公開する)
+## 目次
+
+* [はじめに](README.md)
+* [プログラムを書き始める前に](first.md)
+* [プログラムを書き始めよう](development.md)
+* [リリースに向けて](#readme)
+  * [バージョンを決める．](#バージョンを決める)
+  * [Webサイトを構築する．](#webサイトを構築する)
+  * [Dockerfileを用意する．](#dockerfileを用意する)
+  * [パッケージマネージャでのインストールを整備する．](#パッケージマネージャでのインストールを整備する)
+  * [必要に応じてDOIを発行する．](#必要に応じてdoiを発行する)
+  * [リリースを公開する．](#リリースを公開する)
+  * [宣伝しよう．](#宣伝しよう)
+* [用語](terms.md)
+* [練習問題](exercise.md)
 
 ## バージョンを決める
 
@@ -21,11 +30,13 @@
 
 Webサイトは，[GitHub Pages](https://pages.github.com/)や[GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)などで公開すると良い．
 
+Webサイトで公開する内容は，少なくとも`README.md`で書いた内容は全て公開する必要がある．
+
 ## Dockerfileを用意する
 
 作成したソフトウェアがDockerableであればDockerfileを用意しておこう．
 
-Dockerfileを用意すれば，[DockerHub](https://hub.docker.com/)や[GitHub Registry](https://github.com/features/packages)に登録し，`README.md`にDockerイメージの名前を示しておこう．
+Dockerfileを用意すれば，[DockerHub](https://hub.docker.com/)や[GitHub Registry](https://github.com/features/packages)，[JFrog Artifactory](https://jfrog.com/artifactory/)などのいずれかに登録し，`README.md`にDockerイメージの名前やDockerを使った利用例を示しておこう．
 
 ## パッケージマネージャでのインストールを整備する
 
@@ -54,5 +65,20 @@ DOI（Digial Object Identifier）とは，インターネット上のドキュ�
 
 * `git tag`でタグを発行する．
 * zipで成果物をまとめてダウンロードできるようにする．
-* Dockerイメージをレジストリに公開する．
-* Homebrewなどのレシピを更新する．
+* GitHubなどのリリースページでリリースを公開する．
+
+なお，これも自動化されていると良い．言語ごとにツールが提供されているようだ．
+
+* Go lang
+  * [`goreleaser`](https://github.com/goreleaser/goreleaser)
+* Java (Maven)
+  * [`maven-release-plugin`](https://maven.apache.org/maven-release/maven-release-plugin/)
+* Java (Gradle)
+  * [`gradle-release-plugin`](https://github.com/researchgate/gradle-release)
+
+## 宣伝しよう
+
+リリースが作成できれば，宣伝しよう．従来であれば，[http://freecode.com](http://freecode.com) などで広報できたが，2014-06-18 以降アップデートされていない．今日の媒体としては，TwitterなどのSNSや[Hacker News](https://news.ycombinator.com)や[Reddit.com](https://www.reddit.com) などを使うのが良いらしい．
+
+* [あなたのプロジェクトのユーザーを見つけよう](https://opensource.guide/ja/finding-users/)
+

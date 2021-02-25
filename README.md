@@ -80,6 +80,8 @@
 
 * [オープンソースプロジェクトを立ち上げる](https://ja-opensource-guide.github.io/starting-a-project/)
 * [オープンソースの育て方](https://producingoss.com/ja/)
+* [Command Line Interface Guideline](https://clig.dev)
+* [12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)
 
 ## About
 
