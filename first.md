@@ -12,7 +12,7 @@
   * [ソフトウェアでの利用言語を決める．](#ソフトウェアでの利用言語を決める)
   * [ソフトウェアの概要を書く．](#ソフトウェアの概要を書く)
   * [ソフトウェアの外部仕様を決める．](#ソフトウェアの外部仕様を決める)
-  * [リポジトリをGitHubに作成し，各種ファイルを追加する．](#リポジトリをgithubに作成し各種ファイルを追加する)
+  * [リポジトリをSCPに作成し，各種ファイルを追加する．](#リポジトリをscpに作成し各種ファイルを追加する)
 * [プログラムを書き始めよう](development.md)
 * [リリースに向けて](shipping.md)
 * [用語](terms.md)
@@ -254,14 +254,21 @@ endpointのURLと有効なリクエスト，レスポンスについて記載す
 
 ソフトウェア独自の形式なのか，JSONなのか，YAMLなのか，また，どのような項目があるのかを例を用いて記すとよい．
 
-## リポジトリをGitHubに作成し，各種ファイルを追加する
+## リポジトリをSCPに作成し，各種ファイルを追加する
 
-名前，ライセンス，アイコン，概要，外部仕様の5つを決めたらようやくGitHubにリポジトリを作成し，各種ファイル，`LICENSE`，`README.md`，`.gitignore`を追加する．
-
+名前，ライセンス，アイコン，概要，外部仕様の5つを決めたらようやくSCPにリポジトリを作成し，各種ファイル，`LICENSE`，`README.md`，`.gitignore`を追加する．
 この段階でコミットして，pushしておくと良い．
+
+SCPとはSocial Coding Platformの略で，[GitHub](https://github.com)や[GitLab](https://gitlab.com)，[Bitbucket](https://bitbucket.org/)などを指す．好きなSCP上で公開すると良い．
+[GNU Savannah](https://savannah.gnu.org/)や[sourceforge.net](https://sourceforge.net/)などもSCPではあるが，個人的な印象では，時代遅れ感（２世代くらい前）がある．
+強いこだわりがなければ，GitHub，GitLab，Bitbucketあたりを利用する方が良いであろう．
 
 ### `.gitignore`
 
 この段階で，gitリポジトリで無視するファイルを設定する`.gitignore`も作成し，リポジトリに追加しておくと良い．ただし，今日では`.gitignore`は手作業で作成するのではなく，[`gibo`](https://github.com/simonwhitaker/gibo)を使うのが良い．
 
 ただし，実行ファイルなど，`gibo`で追加されないもの手作業であっても追加しておく．
+
+* [前へ](README.md)
+* [次へ](development.md)
+

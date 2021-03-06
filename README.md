@@ -92,6 +92,10 @@
 
 ### ご意見・感想など
 
-書かれている内容についての意見や修正案などは[Issue](https://github.com/tamada/developing_flows/issues)や[Pull request](https://github.com/tamada/developing_flows/pulls)などでお願いします．プルリクエストを歓迎します．
+書かれている内容についての意見や修正案などは[Issue](https://github.com/tamada/developing_flows/issues)や[Pull request](https://github.com/tamada/developing_flows/pulls)などで送付願いたい．
+プルリクエストを歓迎する．
 
-感想などは[Discussions](https://github.com/tamada/developing_flows/discussions)でお願いします．
+また，感想などは[Discussions](https://github.com/tamada/developing_flows/discussions)で送られたい．
+
+* 前へ
+* [次へ](first.md)

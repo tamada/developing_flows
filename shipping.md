@@ -82,3 +82,5 @@ DOI（Digial Object Identifier）とは，インターネット上のドキュ�
 
 * [あなたのプロジェクトのユーザーを見つけよう](https://opensource.guide/ja/finding-users/)
 
+* [前へ](development.md)
+* [次へ](terms.md)
