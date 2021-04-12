@@ -1,7 +1,7 @@
 # developing_flows
 
 [![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing_flows/blob/master/LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)](https://github.com/tamada/developing_flows/releases/tag/v1.0.0)
+[![Version](https://img.shields.io/badge/Version-1.0.1-green.svg)](https://github.com/tamada/developing_flows/releases/tag/v1.0.1)
 [![GitHub Discussion](https://img.shields.io/badge/GitHub-Discussions-blue?logo=github)](https://github.com/tamada/developing_flows/discussions)
 
 [![CC-BY-4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
@@ -83,6 +83,11 @@
 * [Command Line Interface Guideline](https://clig.dev)
 * [12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)
 
+## Navigation
+
+* 前へ
+* [次へ](first.md)
+
 ## About
 
 ### 著者
@@ -97,5 +102,7 @@
 
 また，感想などは[Discussions](https://github.com/tamada/developing_flows/discussions)で送られたい．
 
-* 前へ
-* [次へ](first.md)
+### 編集履歴
+
+* 2021-04-12
+  * [プログラムを書き始めよう](development.md)の[プログラムを書き始める](development.md#おおっとその前に)にDoD（Definition of Done; 完了の定義）についてのことを追記した．
