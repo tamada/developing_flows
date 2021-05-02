@@ -106,5 +106,7 @@
 
 ### 編集履歴
 
+* 2021-05-02
+  * [参考資料](#参考資料)に [The Missing Semester of Your CS Education (日本語版)](https://missing-semester-jp.github.io) を追加した．
 * 2021-04-12
   * [プログラムを書き始めよう](development.md)の[プログラムを書き始める](development.md#おおっとその前に)にDoD（Definition of Done; 完了の定義）についてのことを追記した．
