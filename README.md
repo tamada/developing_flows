@@ -39,6 +39,7 @@
 * [リリースに向けて](https://github.com/tamada/developing_flows/blob/main/shipping.md)
 * [用語](https://github.com/tamada/developing_flows/blob/main/terms.md)
 * [練習問題](https://github.com/tamada/developing_flows/blob/main/exercise.md)
+* [チェックリスト](https://github.com/tamada/developing_flows/blob/main/checklist.md)
 
 ## このドキュメントについて
 
@@ -106,6 +107,8 @@
 
 ### 編集履歴
 
+* 2021-05-11
+  * [チェックリスト](https://github.com/tamada/developing_flows/blob/main/checklist.md)を追加した．
 * 2021-05-02
   * [参考資料](#参考資料)に [The Missing Semester of Your CS Education (日本語版)](https://missing-semester-jp.github.io) を追加した．
 * 2021-04-12

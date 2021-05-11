@@ -17,6 +17,7 @@
 * [リリースに向けて](shipping.md)
 * [用語](terms.md)
 * [練習問題](exercise.md)
+* [チェックリスト](checklist.md)
 
 ## ソフトウェアの名前を決める
 
@@ -268,6 +269,8 @@ SCPとはSocial Coding Platformの略で，[GitHub](https://github.com)や[GitLa
 この段階で，gitリポジトリで無視するファイルを設定する`.gitignore`も作成し，リポジトリに追加しておくと良い．ただし，今日では`.gitignore`は手作業で作成するのではなく，[`gibo`](https://github.com/simonwhitaker/gibo)を使うのが良い．
 
 ただし，実行ファイルなど，`gibo`で追加されないもの手作業であっても追加しておく．
+
+## Navigation
 
 * [前へ](README.md)
 * [次へ](development.md)
