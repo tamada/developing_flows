@@ -9,7 +9,7 @@ description: >-
 
 ## :bookmark: 目次
 
-* [:beginner: はじめに](./)
+* [:beginner: はじめに](./readme.md)
 * [:egg: プログラムを書き始める前に](first.md)
 * [:black_nib: プログラムを書き始めよう](development.md)
 * [:package: リリースに向けて](shipping.md)
