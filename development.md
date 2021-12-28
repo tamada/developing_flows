@@ -1,5 +1,5 @@
 ---
-title: プログラムを書き始めよう
+title: ":black_nib: プログラムを書き始めよう"
 description: >-
   前項に書かれた内容が全てできていれば，ソフトウェアのリポジトリがSCPに作成され，ローカルにもリポジトリのコピーが存在するはずである．
   それを踏まえて，次の手順でプログラムを書き始めよう．
@@ -10,10 +10,10 @@ description: >-
 * [:beginner: はじめに](./)
 * [:egg: プログラムを書き始める前に](first.md)
 * [:black_nib: プログラムを書き始めよう](development.md#readme)
-  * [:tractor: ビルドファイルを用意する．](development.md#ビルドファイルを用意する)
-  * [:building_construction: CIを整備する．](development.md#ciを整備する)
-  * [:desert: テストデータを準備する．](development.md#テストデータを準備する)
-  * [:hatching_chick: プログラムを書き始める．](development.md#プログラムを書き始める)
+  * [:tractor: ビルドファイルを用意する．](development.md#tractor-ビルドファイルを用意する)
+  * [:building_construction: CIを整備する．](development.md#building_constructionci-を整備する)
+  * [:desert: テストデータを準備する．](development.md#desert-テストデータを準備する)
+  * [:hatching_chick: プログラムを書き始める．](development.md#hatching_chick-プログラムを書き始める)
 * [:package: リリースに向けて](shipping.md)
 * [:closed_book: 用語](terms.md)
 * [:books: 練習問題](exercise.md)
