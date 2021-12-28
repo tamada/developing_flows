@@ -7,7 +7,7 @@ description: >-
 
 ## :bookmark: 目次
 
-* [:beginner: はじめに](./readme.md)
+* [:beginner: はじめに](./README.md)
 * [:egg: プログラムを書き始める前に](first.md)
 * [:black_nib: プログラムを書き始めよう](development.md#readme)
   * [:tractor: ビルドファイルを用意する．](development.md#tractor-ビルドファイルを用意する)

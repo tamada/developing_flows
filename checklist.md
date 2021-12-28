@@ -5,7 +5,7 @@ description: これから開発に臨む場合，このチェックリストを�
 
 ## :bookmark: 目次
 
-* [:beginner: はじめに](./readme.md)
+* [:beginner: はじめに](./README.md)
 * [:egg: プログラムを書き始める前に](first.md)
 * [:black_nib: プログラムを書き始めよう](development.md)
 * [:package: リリースに向けて](checklist.md#readme)
