@@ -24,12 +24,12 @@ description: >-
 
 ## :bookmark: 目次
 
-* [:beginner: はじめに](./#readme)
-  * [:loudspeaker: 注意](./#-laudspeaker-注意)
-  * [:page_facing_up: このドキュメントについて](./#このドキュメントについて)
-  * [:bust_in_silhouette: 著者の実績](./#著者の実績)
-  * [:link: 参考資料](./#参考資料)
-  * [:card_index: About](./#about)
+* [:beginner: はじめに](./)
+  * [:loudspeaker: 注意](./#laudspeaker-注意)
+  * [:page_facing_up: このドキュメントについて](./#page_facing_up-このドキュメントについて)
+  * [:bust_in_silhouette: 著者の実績](./#bust_in_silhouette-著者の実績)
+  * [:link: 参考資料](./#link-参考資料)
+  * [:card_index: About](./#card_indexab-out)
 * [:egg: プログラムを書き始める前に](first.md)
 * [:black_nib: プログラムを書き始めよう](development.md)
 * [:package: リリースに向けて](shipping.md)
