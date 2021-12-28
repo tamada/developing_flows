@@ -1,0 +1,20 @@
+{
+  "author": "Haruaki TAMADA",
+  "title": "Developing Flows",
+  "description": "近年のソフトウェア開発はプログラムを書けば終わりというわけではない．プログラム以外のドキュメントも書かないといけない．ここでは，著者がソフトウェアを開発するときに行う手順を記す． 新たにソフトウェア開発に臨もうとする初学者の参考になると幸いである．",
+  "language": "ja",
+  "plugins": [
+    "advanced-emoji",
+    "git-author",
+    "todo",
+    "-search"
+  ],
+  "pluginsConfig": {
+    "git-author": {
+      "position": "bottom",
+      "modifyTpl": "Last modified by {user} at {timestamp}.",
+      "createTpl": "Created by {user} at {timestamp}.",
+      "timeStampFormat": "YYYY-MM-DD HH:mm:ss"
+    }
+  }
+}
