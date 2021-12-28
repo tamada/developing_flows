@@ -1,18 +1,20 @@
-# プログラムを書き始める前に
+---
+description: 何か書きたいソフトウェアがあるならば，実際にプログラムを書き始める前に決めなければならないことがある．
+---
 
-何か書きたいソフトウェアがあるならば，実際にプログラムを書き始める前に決めなければならないことがある．
+# プログラムを書き始める前に
 
 ## 目次
 
-* [はじめに](README.md)
-* [プログラムを書き始める前に](#readme)
-  * [ソフトウェアの名前を決める．](#ソフトウェアの名前を決める)
-  * [ソフトウェアのライセンスを決める．](#ソフトウェアのライセンスを決める)
-  * [ソフトウェアのアイコンを決める．](#ソフトウェアのアイコンを決める)
-  * [ソフトウェアでの利用言語を決める．](#ソフトウェアでの利用言語を決める)
-  * [ソフトウェアの概要を書く．](#ソフトウェアの概要を書く)
-  * [ソフトウェアの外部仕様を決める．](#ソフトウェアの外部仕様を決める)
-  * [リポジトリをSCPに作成し，各種ファイルを追加する．](#リポジトリをscpに作成し各種ファイルを追加する)
+* [はじめに](./)
+* [プログラムを書き始める前に](first.md#readme)
+  * [ソフトウェアの名前を決める．](first.md#ソフトウェアの名前を決める)
+  * [ソフトウェアのライセンスを決める．](first.md#ソフトウェアのライセンスを決める)
+  * [ソフトウェアのアイコンを決める．](first.md#ソフトウェアのアイコンを決める)
+  * [ソフトウェアでの利用言語を決める．](first.md#ソフトウェアでの利用言語を決める)
+  * [ソフトウェアの概要を書く．](first.md#ソフトウェアの概要を書く)
+  * [ソフトウェアの外部仕様を決める．](first.md#ソフトウェアの外部仕様を決める)
+  * [リポジトリをSCPに作成し，各種ファイルを追加する．](first.md#リポジトリをscpに作成し各種ファイルを追加する)
 * [プログラムを書き始めよう](development.md)
 * [リリースに向けて](shipping.md)
 * [用語](terms.md)
@@ -21,24 +23,22 @@
 
 ## ソフトウェアの名前を決める
 
-まず，ソフトウェアの名前を決める必要がある．
-この名前はGitHubなどのプラットフォーム上でプロジェクトを区別するための識別子（Identifier）となる．
-そのため，ソフトウェア開発を始める前に真っ先に決めるべき事項と言える．
+まず，ソフトウェアの名前を決める必要がある． この名前はGitHubなどのプラットフォーム上でプロジェクトを区別するための識別子（Identifier）となる． そのため，ソフトウェア開発を始める前に真っ先に決めるべき事項と言える．
 
 ソフトウェアには，アルファベットの名前をつけたほうが良いだろう．この名前のディレクトリ以下にソースファイルやリソースファイルなどが置かれることになり，ターミナル上で何度もこの名前を入力することになる．アルファベット以外の名前だとターミナル上での移動が面倒になったり，文字コード関連でOSごとに取り扱いが異なってしまったり余計な手間がかかる可能性がある．
 
 名前の決め方の指針として，以下のものが挙げられるが，最終的には開発者の好みで付ければ良い．ただし，Googlabilityについては考慮しておこう．
 
 * パターン1: そのソフトウェアが行うことがわかるような名前をつける．
-  * そのものズバリである．`head`や`tail`,` tee`, `find`などがこのパターン1に当てはまるだろう．
+  * そのものズバリである．`head`や`tail`, `tee`, `find`などがこのパターン1に当てはまるだろう．
   * 既存の単語となるため，Googlabilityは低くなりがち．
   * ただし，既存の単語の一部を別の文字に置き換え，存在しない単語とすることで，Googlabilityを高める方法もある．
-    * [Amazon Rekognition](https://aws.amazon.com/jp/rekognition/?nc2=h_ql_prod_ml_rek&blog-cards.sort-by=item.additionalFields.createdDate&blog-cards.sort-order=desc)など．
+    * [Amazon Rekognition](https://aws.amazon.com/jp/rekognition/?nc2=h\_ql\_prod\_ml\_rek\&blog-cards.sort-by=item.additionalFields.createdDate\&blog-cards.sort-order=desc)など．
 * パターン2: やりたいことの頭文字などを取って名付ける（頭字語，acronym）のも良い．
   * その略語が既存の単語と一致する場合（[アプロニム，apronym](https://ja.wikipedia.org/wiki/%E9%A0%AD%E5%AD%97%E8%AA%9E#%E3%82%A2%E3%83%97%E3%83%AD%E3%83%8B%E3%83%A0)と呼ぶらしい）や，[再帰的頭字語](https://ja.wikipedia.org/wiki/%E9%A0%AD%E5%AD%97%E8%AA%9E#%E5%86%8D%E5%B8%B0%E7%9A%84%E9%A0%AD%E5%AD%97%E8%AA%9E)だと格好良いが，Linux (Linux is not Unix) や Wine (Wine is not emulator) みたいな名前はそうそう出てこない．出てくると儲けもの程度に思っておくと良い．
   * `grep`（global regular expression print）や[`ripgrep`](https://github.com/BurntSushi/ripgrep)（R.I.P. grep）など．cat（concatnate）も当てはまるか！？
 * パターン3: そのソフトウェアと関連の深い名詞や動詞など．動物や食べ物などの名前を適当につけるのも良い．無理矢理にでも関連が説明できれば良い．
-  * [Docker](https://www.docker.com/), [夜フクロウ](https://sites.google.com/site/yorufukurou/)など．
+  * [Docker](https://www.docker.com), [夜フクロウ](https://sites.google.com/site/yorufukurou/)など．
 * パターン4: 自分の名前や対象のもののアナグラムや逆順なども良いかもしれない．
   * 著者のファミリーネーム，玉田（tamada）を逆順にすると adamatとなる．adamasを連想させ，硬そうなイメージを受ける．
 * パターン5: 適当．これまでのパターンに当てはまらないもの．
@@ -48,11 +48,9 @@
 * [rrh](https://github.com/tamada/rrh)（パターン2）
   * Remote Repositories Head/Repositories, Ready to Hack の略としているが，実は Red Riding Hood の略でもある．短くて，打ちやすくて気に入っている．
 * [pochi](https://github.com/pochi)（パターン3）
-  * ソフトウェアの盗用を検出するソフトウェア．花咲爺の「ここほれワンワン」からの連想である．
-    ただ，名前を付けた後，花咲爺の犬の名前はシロだったことに気付いた．
+  * ソフトウェアの盗用を検出するソフトウェア．花咲爺の「ここほれワンワン」からの連想である． ただ，名前を付けた後，花咲爺の犬の名前はシロだったことに気付いた．
 * [omelette](https://github.com/tamada/omelette)（パターン3）
-  * 使い捨てプロダクトとして作成したものが，結構メンテナンスを続けている．
-    着想して，作り始めた時に食べたお昼ご飯がオムレツだったことから．
+  * 使い捨てプロダクトとして作成したものが，結構メンテナンスを続けている． 着想して，作り始めた時に食べたお昼ご飯がオムレツだったことから．
 * [purplecat](https://github.com/tamadalab/purplecat)（パターン3）
   * 全くプロダクトの機能と名前に関係がない．プロジェクトのビルドファイルから依存ライブラリとそのライセンスを抽出するという機能を持つ．
   * 名前の由来は，Eric Carlの絵本[Brown Bear, Brown Bear,What do you see](https://www.amazon.co.jp/dp/0141501596)から．開発当時，子供がこの本が好きでよく読み聞かせていたから．
@@ -64,8 +62,7 @@
   * これも見事にプロダクトの機能と名前に関係がない．9rulesの後継．
   * 作ろうとしているときにエビのフリッタが喰いてぇなぁと思ったところから．
 
-見事に何をしているプロダクトか名前からはわからない．
-しかし，自分の中で定着すれば良いと考える．
+見事に何をしているプロダクトか名前からはわからない． しかし，自分の中で定着すれば良いと考える．
 
 ### 参考リンク
 
@@ -96,12 +93,11 @@
 * このソフトウェアが他の人に拡張される時に，ライセンスの保持を望むか．
 * 著作権は保持しつつも，ライセンスの保持は望まない．
 
-[Creative Commons](https://creativecommons.org/)のように意思を選択した上でライセンスが決まれば良いが，似たようなライセンスがたくさんあるため，一つに絞りきれないのも難しいところである．
-しかし，[Choose an open source license](https://choosealicense.com)というサイトもあり，選択が容易になってきている．
+[Creative Commons](https://creativecommons.org)のように意思を選択した上でライセンスが決まれば良いが，似たようなライセンスがたくさんあるため，一つに絞りきれないのも難しいところである． しかし，[Choose an open source license](https://choosealicense.com)というサイトもあり，選択が容易になってきている．
 
 #### 著作権を放棄するか
 
-ソフトウェアを利用する立場の人に制限を付けない場合，著作権の放棄を選択することになるであろう．ただし，[日本の法律では著作権の放棄についての概念がない](http://ousar.lib.okayama-u.ac.jp/files/public/1/15058/20160527210054186555/027_193_212.pdf)らしい．それならば，ライセンスで明示しようということで，次のようなライセンスがある．
+ソフトウェアを利用する立場の人に制限を付けない場合，著作権の放棄を選択することになるであろう．ただし，[日本の法律では著作権の放棄についての概念がない](http://ousar.lib.okayama-u.ac.jp/files/public/1/15058/20160527210054186555/027\_193\_212.pdf)らしい．それならば，ライセンスで明示しようということで，次のようなライセンスがある．
 
 実際に利用する時には，ライセンスの原文を参照した上で利用されたい．とはいえ，著名な団体（Creative Commons）が出しているライセンスであるため，CC-0 を使うのが無難かもしれない．
 
@@ -142,10 +138,9 @@
 
 ### OSSにしない場合
 
-自分の作成したソフトウェアを，商用や軍事関係，特定の誰かに利用されたくない場合は，OSSではない道もある．この場合，自分でライセンス文書を書くことになる．この時，ライセンスとは開発者とユーザとの間で交わす契約書（使用許諾書）である，ということに気をつける必要がある．つまり，契約書のトラブルが起こらないよう注意を払って文書を作成する必要がある．[AI-CON](https://ai-con.lawyer/)のようなサービスが利用できるかもしれない．
+自分の作成したソフトウェアを，商用や軍事関係，特定の誰かに利用されたくない場合は，OSSではない道もある．この場合，自分でライセンス文書を書くことになる．この時，ライセンスとは開発者とユーザとの間で交わす契約書（使用許諾書）である，ということに気をつける必要がある．つまり，契約書のトラブルが起こらないよう注意を払って文書を作成する必要がある．[AI-CON](https://ai-con.lawyer)のようなサービスが利用できるかもしれない．
 
-GNUの言う[形式ばらないライセンス](https://www.gnu.org/licenses/license-list.html#informal)で色々な条項を書くことになるのかもしれない．
-しかし，書いた文書がライセンスであると認められるかどうかは利用者の国の法律に従い，言い回しの問題もあり，期待通りに受け取られるかわからない．
+GNUの言う[形式ばらないライセンス](https://www.gnu.org/licenses/license-list.html#informal)で色々な条項を書くことになるのかもしれない． しかし，書いた文書がライセンスであると認められるかどうかは利用者の国の法律に従い，言い回しの問題もあり，期待通りに受け取られるかわからない．
 
 これらのことから，著者はできるだけ避けた方が良いと考える．
 
@@ -155,9 +150,7 @@ GNUの言う[形式ばらないライセンス](https://www.gnu.org/licenses/lic
   * [第1回 著作権とライセンスをわかっておきたい](https://tech-lab.sios.jp/archives/what-is-oss-license-01)
   * [第2回 色々なオープンソースライセンスをわかっておきたい](https://tech-lab.sios.jp/archives/what-is-oss-license-02)
   * [第3回 オープンソースライセンスの使い方をわかっておきたい](https://tech-lab.sios.jp/archives/what-is-oss-license-03)
-
 * [今日から始めるOSSライセンス講座](https://thinkit.co.jp/series/5150)
-
 * [Githubによる、オープンソースライセンスの選び](https://www.catch.jp/oss-license/2013/09/10/github/)
 * [ちょっとユニークなライセンスたち・まとめ](https://qiita.com/hakatashi/items/eb9f7484e2d23096eb14)
 * [SPDX License List](https://spdx.org/licenses/)
@@ -168,30 +161,30 @@ GNUの言う[形式ばらないライセンス](https://www.gnu.org/licenses/lic
 
 アイコンはSVGで作成するか，いくつかの大きさを用意するのが良い．アイコンは，GUIソフトウェアの場合はアプリケーションアイコンとして利用されるほか，Webサイトなどで利用し，ソフトウェアの顔として利用する．
 
-著者の場合，[freesvg.org](https://freesvg.org/)などで公開されている画像を用いる場合や，自作の場合がある．
+著者の場合，[freesvg.org](https://freesvg.org)などで公開されている画像を用いる場合や，自作の場合がある．
 
 * [rrh](https://tamada.github.io/rrh/about/#-attributions)
-  * [www.iconpon.com](https://www.iconpon.com/)で作成した画像を利用している．
+  * [www.iconpon.com](https://www.iconpon.com)で作成した画像を利用している．
 * [pochi](https://tamada.github.io/pochi/about/#-icon-of-pochi)
   * 折り紙で犬を作成し，撮影したものを用いている．
 * [omelette](https://tamada.github.io/omelette/about/#-attributions)
-  * [www.flaticon.com](https://www.flaticon.com/) で公開されている画像を用いている．
+  * [www.flaticon.com](https://www.flaticon.com) で公開されている画像を用いている．
 * [purplecat](https://tamadalab.github.io/purplecat/about/#-logo)
-  * [pixy.org](https://pixy.org/) から取得した画像を利用している．
-* [9rules](https://tamada.github.io/9rules/about/#jack_o_lantern-icons-of-9rules)
+  * [pixy.org](https://pixy.org) から取得した画像を利用している．
+* [9rules](https://tamada.github.io/9rules/about/#jack\_o\_lantern-icons-of-9rules)
   * Boxy SVGで自作した．
 
 ## ソフトウェアでの利用言語を決める
 
 ここで言う言語は，プログラム言語のことではなく，ドキュメントなどを記述する言語のことを指す．自然言語で書くべき内容は，以下のように分類できる．分類は，ドキュメントの種類を表し，i18n（Internationalization; 国際化）の列は，複数言語で書いておき，必要に応じて切り替え可能であるかどうかを表している．困難となっているものは，単一の言語で一貫して書いておいた方が良いであろう．
 
-| 分類                   | i18n |
-| ---------------------- | ---- |
-| README.md              | 可能 |
-| Webサイト              | 可能 |
-| プログラムの出力       | 可能 |
-| プログラム中のコメント | 困難 |
-| コミットコメント       | 困難 |
+| 分類          | i18n |
+| ----------- | ---- |
+| README.md   | 可能   |
+| Webサイト      | 可能   |
+| プログラムの出力    | 可能   |
+| プログラム中のコメント | 困難   |
+| コミットコメント    | 困難   |
 
 自然言語は多くの場合，英語もしくは母国語になろう．どちらにするかは個人の自由である．以下の点について考えた上で好きに決めて良い．英語を選択する場合は，全世界に向けて公開できる．その反面，英語を母国語としない人たち（さらに英語が得意ではない人たち）にとって，英語の文章を書くという重いタスクを必要とする．
 
@@ -203,7 +196,7 @@ GNUの言う[形式ばらないライセンス](https://www.gnu.org/licenses/lic
 
 `ソフトウェア名/README.md`を用意し，概要を書く．この概要は，1行のキャッチフレーズ的なもの（tagline）となぜこれが必要なのか，何をするものなのかの背景を含めた概要の2つを書く．次のような内容の`README.md`を作成することになる．
 
-```markdown: README.md
+```
 # ソフトウェア名
 
 1行概要（tagline）
@@ -257,12 +250,9 @@ endpointのURLと有効なリクエスト，レスポンスについて記載す
 
 ## リポジトリをSCPに作成し，各種ファイルを追加する
 
-名前，ライセンス，アイコン，概要，外部仕様の5つを決めたらようやくSCPにリポジトリを作成し，各種ファイル，`LICENSE`，`README.md`，`.gitignore`を追加する．
-この段階でコミットして，pushしておくと良い．
+名前，ライセンス，アイコン，概要，外部仕様の5つを決めたらようやくSCPにリポジトリを作成し，各種ファイル，`LICENSE`，`README.md`，`.gitignore`を追加する． この段階でコミットして，pushしておくと良い．
 
-SCPとはSocial Coding Platformの略で，[GitHub](https://github.com)や[GitLab](https://gitlab.com)，[Bitbucket](https://bitbucket.org/)などを指す．好きなSCP上で公開すると良い．
-[GNU Savannah](https://savannah.gnu.org/)や[sourceforge.net](https://sourceforge.net/)などもSCPではあるが，個人的な印象では，時代遅れ感（２世代くらい前）がある．
-強いこだわりがなければ，GitHub，GitLab，Bitbucketあたりを利用する方が良いであろう．
+SCPとはSocial Coding Platformの略で，[GitHub](https://github.com)や[GitLab](https://gitlab.com)，[Bitbucket](https://bitbucket.org)などを指す．好きなSCP上で公開すると良い． [GNU Savannah](https://savannah.gnu.org)や[sourceforge.net](https://sourceforge.net)などもSCPではあるが，個人的な印象では，時代遅れ感（２世代くらい前）がある． 強いこだわりがなければ，GitHub，GitLab，Bitbucketあたりを利用する方が良いであろう．
 
 ### `.gitignore`
 
@@ -272,6 +262,5 @@ SCPとはSocial Coding Platformの略で，[GitHub](https://github.com)や[GitLa
 
 ## Navigation
 
-* [前へ](README.md)
+* [前へ](./)
 * [次へ](development.md)
-

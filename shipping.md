@@ -1,20 +1,22 @@
-# リリースに向けて
+---
+description: ソフトウェア開発がある程度落ち着いたら，リリースに向けて，次のことを行う必要がある．
+---
 
-ソフトウェア開発がある程度落ち着いたら，リリースに向けて，次のことを行う必要がある．
+# リリースに向けて
 
 ## 目次
 
-* [はじめに](README.md)
+* [はじめに](./)
 * [プログラムを書き始める前に](first.md)
 * [プログラムを書き始めよう](development.md)
-* [リリースに向けて](#readme)
-  * [バージョンを決める．](#バージョンを決める)
-  * [Webサイトを構築する．](#webサイトを構築する)
-  * [Dockerfileを用意する．](#dockerfileを用意する)
-  * [パッケージマネージャでのインストールを整備する．](#パッケージマネージャでのインストールを整備する)
-  * [必要に応じてDOIを発行する．](#必要に応じてdoiを発行する)
-  * [リリースを公開する．](#リリースを公開する)
-  * [宣伝しよう．](#宣伝しよう)
+* [リリースに向けて](shipping.md#readme)
+  * [バージョンを決める．](shipping.md#バージョンを決める)
+  * [Webサイトを構築する．](shipping.md#webサイトを構築する)
+  * [Dockerfileを用意する．](shipping.md#dockerfileを用意する)
+  * [パッケージマネージャでのインストールを整備する．](shipping.md#パッケージマネージャでのインストールを整備する)
+  * [必要に応じてDOIを発行する．](shipping.md#必要に応じてdoiを発行する)
+  * [リリースを公開する．](shipping.md#リリースを公開する)
+  * [宣伝しよう．](shipping.md#宣伝しよう)
 * [用語](terms.md)
 * [練習問題](exercise.md)
 * [チェックリスト](checklist.md)
@@ -27,9 +29,9 @@
 
 ## Webサイトを構築する
 
-[Jekyll](https://jekyllrb.com/)でも[Hugo](https://gohugo.io)でも[Gatsby](https://www.gatsbyjs.com/)でも何でも良いが，静的サイト構築ツールを使い，Webサイトを構築する．
+[Jekyll](https://jekyllrb.com)でも[Hugo](https://gohugo.io)でも[Gatsby](https://www.gatsbyjs.com)でも何でも良いが，静的サイト構築ツールを使い，Webサイトを構築する．
 
-Webサイトは，[GitHub Pages](https://pages.github.com/)や[GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)などで公開すると良い．
+Webサイトは，[GitHub Pages](https://pages.github.com)や[GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)などで公開すると良い．
 
 Webサイトで公開する内容は，少なくとも`README.md`で書いた内容は全て公開する必要がある．
 
@@ -37,20 +39,22 @@ Webサイトで公開する内容は，少なくとも`README.md`で書いた内
 
 作成したソフトウェアがDockerableであればDockerfileを用意しておこう．
 
-Dockerfileを用意すれば，[DockerHub](https://hub.docker.com/)や[GitHub Registry](https://github.com/features/packages)，[JFrog Artifactory](https://jfrog.com/artifactory/)などのいずれかに登録し，`README.md`にDockerイメージの名前やDockerを使った利用例を示しておこう．
+Dockerfileを用意すれば，[DockerHub](https://hub.docker.com)や[GitHub Registry](https://github.com/features/packages)，[JFrog Artifactory](https://jfrog.com/artifactory/)などのいずれかに登録し，`README.md`にDockerイメージの名前やDockerを使った利用例を示しておこう．
 
 ## パッケージマネージャでのインストールを整備する
 
 インストールを簡易化するために各OS向けにパッケージマネージャが存在する．全てに対応する必要はないと思うが，自分が主に使う環境向けのレシピは用意しておきたい．
 
-* `apk`: Alpine Linux
-* `pacman`: Arch Linux
-* `apt`: Debian
-* `dnf`: Fedora
-* `emerge`: Gentoo
-* `brew`: macOS（Homebrew）
-* `port`: macOS（MacPorts）
-* `chocolatey`: Windows
+* `apk` Alpine Linux
+* `pacman` Arch Linux
+* `apt` Debian
+* `dnf` Fedora
+* `emerge` Gentoo
+* `brew` macOS（Homebrew）
+* `port` macOS（MacPorts）
+* `chocolatey` Windows
+
+``[`asdf`](https://github.com/asdf-vm/asdf) に対応して複数バージョンのソフトウェアをインストールできるようにしても良いかもしれない．
 
 レシピの書き方などの詳細は各ドキュメントなどを参照されたい．
 
