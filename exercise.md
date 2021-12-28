@@ -1,26 +1,25 @@
 ---
+title: ":books: 練習問題"
 description: >-
   これまでに述べた内容を実践するためには何らかのネタが必要である．
   作りたいものがあるのであれば，それを作れば良いが，具体的なものが思い浮かばない場合は，ここに挙げるようなソフトウェアを作ると良いであろう．
 ---
 
-# 練習問題
-
 なお，作成したソフトウェアの著作権は作成者に属すれば良いが，ソフトウェアの名称や具体的な仕様は以下に述べたものに頼らず，作成者が捻り出すこと． 別の実装例を作成し，掲載しても良いという人がいれば，[Issue](https://github.com/tamada/developing\_flows/issues)や[Pull request](https://github.com/tamada/developing\_flows/pulls)などで連絡されたい．
 
-## 目次
+## :bookmark: 目次
 
-* [はじめに](./)
-* [プログラムを書き始める前に](first.md)
-* [プログラムを書き始めよう](development.md)
-* [リリースに向けて](shipping.md)
-* [用語](terms.md)
-* [練習問題](exercise.md#readme)
+* [:beginner: はじめに](./)
+* [:egg: プログラムを書き始める前に](first.md)
+* [:black_nib: プログラムを書き始めよう](development.md)
+* [:package: リリースに向けて](shipping.md)
+* [:closed_book: 用語](terms.md)
+* [:books: 練習問題](exercise.md#readme)
   * [ワードカウント](exercise.md#ワードカウント)
   * [最新バージョン情報の取得](exercise.md#最新バージョン情報の取得)
   * [いいねを数えるREST API](exercise.md#いいねを数えるrestapi)
   * [その他](exercise.md#その他)
-* [チェックリスト](checklist.md)
+* [:ballot_box_with_check: チェックリスト](checklist.md)
 
 ## ワードカウント
 
