@@ -44,22 +44,24 @@ Dockerfileを用意すれば，[DockerHub](https://hub.docker.com)や[GitHub Reg
 
 インストールを簡易化するために各OS向けにパッケージマネージャが存在する．全てに対応する必要はないと思うが，自分が主に使う環境向けのレシピは用意しておきたい．
 
-* `apk` Alpine Linux
-* `pacman` Arch Linux
-* `apt` Debian
-* `dnf` Fedora
-* `emerge` Gentoo
-* `brew` macOS（Homebrew）
-* `port` macOS（MacPorts）
-* `chocolatey` Windows
+* `apk` Alpine Linux ([Alpine packages](https://pkgs.alpinelinux.org/packages))
+* [`pacman`](https://archlinux.org/pacman/) Arch Linux
+* [`apt`](https://salsa.debian.org/apt-team/apt.git) [Debian](https://www.debian.org)
+* [`dnf`](https://docs.fedoraproject.org/en-US/quick-docs/dnf/) [Fedora](https://getfedora.org/)
+* [`emerge`]() [Gentoo](https://www.gentoo.org)
+* `brew` macOS（[Homebrew](https://brew.sh)）
+* `port` macOS（[MacPorts](https://www.macports.org)）
+* [`chocolatey`](https://chocolatey.org) Windows
 
-``[`asdf`](https://github.com/asdf-vm/asdf) に対応して複数バージョンのソフトウェアをインストールできるようにしても良いかもしれない．
+[`asdf`](https://github.com/asdf-vm/asdf) に対応して複数バージョンのソフトウェアをインストールできるようにしても良いかもしれない．
 
 レシピの書き方などの詳細は各ドキュメントなどを参照されたい．
 
 ## :orange_book: 必要に応じてDOIを発行する
 
-DOI（Digial Object Identifier）とは，インターネット上のドキュメントに恒久的に与えられるIDのことで，学術論文などで使われている．ソフトウェアに対してもDOIを発行できるようになっている．もし，作成したソフトウェアを論文中で引用する場合，DOIを発行しておくと良いかもしれない．
+DOI（Digial Object Identifier）とは，インターネット上のドキュメントに恒久的に与えられるIDのことで，学術論文などで使われている．
+ソフトウェアに対してもDOIを発行できるようになっている．
+もし，作成したソフトウェアを論文中で引用する場合，DOIを発行しておくと良いかもしれない．
 
 * [Making Your Code Citable](https://guides.github.com/activities/citable-code/)
 
