@@ -1,15 +1,22 @@
 ---
-title: ":beginner: はじめに"
+title: "ソフトウェアを作り始める前にすべきこと"
 description: >-
   近年のソフトウェア開発はプログラムを書けば終わりというわけではない．プログラム以外のドキュメントも書かないといけない．ここでは，著者がソフトウェアを開発するときに行う手順を記す．
   新たにソフトウェア開発に臨もうとする初学者の参考になると幸いである．
 ---
 
-[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing\_flows/blob/master/LICENSE) [![Version](https://img.shields.io/badge/Version-1.0.2-green.svg)](https://github.com/tamada/developing\_flows/releases/tag/v1.0.2) [![DOI](https://zenodo.org/badge/335323499.svg)](https://zenodo.org/badge/latestdoi/335323499) [![GitHub Discussion](https://img.shields.io/badge/GitHub-Discussions-blue?logo=github)](https://github.com/tamada/developing\_flows/discussions)
+# ソフトウェアを作り始める前にすべきこと
+
+[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing\_flows/blob/master/LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.3-green.svg)](https://github.com/tamada/developing\_flows/releases/tag/v1.0.3)
+[![DOI](https://zenodo.org/badge/335323499.svg)](https://zenodo.org/badge/latestdoi/335323499)
+[![GitHub Discussion](https://img.shields.io/badge/GitHub-Discussions-blue?logo=github)](https://github.com/tamada/developing\_flows/discussions)
 
 [![CC-BY-4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
-## :loudspeaker: 注意
+## :beginner: はじめに
+
+### :loudspeaker: 注意
 
 ここでは，著者がソフトウェアを開発するときに行う手順を記す． 新たにソフトウェア開発に臨もうとする初学者の参考になると幸いである． ただし，以下の点に注意されたい．
 
@@ -22,7 +29,7 @@ description: >-
 * 著者が主に使用する言語は，Java, JavaScript, Goである．
   * 言語に依存する内容は極力排除して書くつもりであるが，依存する場合もあることを念頭に読んでもらいたい．
 
-## :bookmark: 目次
+### :bookmark: 目次
 
 * [:beginner: はじめに](./README.md)
   * [:loudspeaker: 注意](./README.md#laudspeaker-注意)
@@ -37,7 +44,7 @@ description: >-
 * [:books: 練習問題](exercise.md)
 * [:ballot_box_with_check: チェックリスト](checklist.md)
 
-## :page_facing_up: このドキュメントについて
+### :page_facing_up: このドキュメントについて
 
 * 記されていること
   * 全くの白紙の状態からソフトウェアプロジェクトを開始し，リリースするまでの一連の流れを記す．
@@ -50,7 +57,7 @@ description: >-
 * このドキュメントの想定読者
   * 一通りのプログラムが書けるようになったものの，まだ一つのプロジェクトを経験していない開発者，もしくは幾つかのプロジェクトを経験し，思い通りに開発できなかった開発者．
 
-## :bust_in_silhouette: 著者の実績
+### :bust_in_silhouette: 著者の実績
 
 私がこれまでに開発したものについては，以下を参照されたい．
 
@@ -63,16 +70,19 @@ description: >-
 * [tamada/pochi](https://github.com/tamada/pochi)
   * Java, CLI, Docker, Groovy
   * Java向けバースマークツール（Javaアプリの盗用検出ツール）．
-* [tamada/uniq2](https://github.com/tamada/uniq2)
+* [tamada/uniq2](https://github.com/tamada/peripherals)
   * Go, CLI, Docker
-  * uniqコマンドの別実装．
+  * uniqコマンドの別実装や Stream の take や skip のような操作を CLI でもできるようにした．
 * [tamada/fritter](https://github.com/tamada/fritter)
   * Java, CLI, Docker
   * Javaソースコードの品質チェックツール（[tamada/9rules](https://github.com/tamada/9rules)の後継）．
+* [tamada/btmeister](https://github.com/tamada/btmeister)
+  * Rust, CLI, Docker
+  * どのようなビルドツールを利用しているのかを判定するツール．
 
 他にも様々なツールを https://github.com/tamada にて公開している．適宜参照されたい．
 
-## :link: 参考資料
+### :link: 参考資料
 
 * [オープンソースプロジェクトを立ち上げる](https://ja-opensource-guide.github.io/starting-a-project/)
 * [オープンソースの育て方](https://producingoss.com/ja/)
@@ -80,35 +90,58 @@ description: >-
 * [12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)
 * [The Missing Semester of Your CS Education (日本語版)](https://missing-semester-jp.github.io)
 
-## Navigation
+### Navigation
 
 * 前へ
 * [次へ](first.md)
 
-## :name_badge: About
+### :name_badge: About
 
-### :man_office_worker:著者 :woman_office_worker:
+#### :man_office_worker:著者 :woman_office_worker:
 
 * 玉田 春昭（@tamada）
     * [https://tamada.github.io/](https://tamada.github.io)
     * [https://tamada.gitbook.io/developing-flows](https://tamada.gitbook.io/developing-flows/)
 
-### :thought_balloon: ご意見・感想など
+#### :thought_balloon: ご意見・感想など
 
 書かれている内容についての意見や修正案などはGitHub上の[Issue](https://github.com/tamada/developing_flows/issues)や[Pull request](https://github.com/tamada/developing_flows/pulls)などで送付願いたい． プルリクエストを歓迎する．
 
 また，感想などはGitHubの[Discussions](https://github.com/tamada/developing_flows/discussions)で送られたい．
 
-### :pushpin: 編集履歴
+#### 引用方法
 
+* 玉田 春昭，"ソフトウェアを作り始める前にすべきこと"，https://github.com/tamada/developing_flows，Dec 26, 2022. 
+
+[![DOI](https://zenodo.org/badge/335323499.svg)](https://zenodo.org/badge/latestdoi/335323499)
+
+```tex
+@misc { 2021sdf_tamada,
+  author       = {玉田 春昭},
+  title        = {ソフトウェアを作り始める前にすべきこと},
+  howpublished = {\url{https://github.com/tamada/developing_flows}},
+  month        = {March},
+  year         = {2021},
+}
+```
+
+#### :pushpin: 編集履歴
+
+* 2022-12-26
+  * 引用方法を記した．
+  * v1.0.3 リリース
 * 2022-04-20
   * [:package: リリースに向けて](shipping.md) でパッケージマネージャへのリンクを貼った．
 * 2021-12-28
   * GitBookで公開した．
   * 絵文字を追加した．
+  * v1.0.2 リリース
 * 2021-05-11
   * [チェックリスト](checklist.md)を追加した．
 * 2021-05-02
   * [参考資料](./#参考資料)に [The Missing Semester of Your CS Education (日本語版)](https://missing-semester-jp.github.io) を追加した．
 * 2021-04-12
   * [プログラムを書き始めよう](development.md)の[プログラムを書き始める](development.md#おおっとその前に)にDoD（Definition of Done; 完了の定義）についてのことを追記した．
+  * v1.0.1 リリース
+* 2021-03-06
+  * v1.0.0 リリース
