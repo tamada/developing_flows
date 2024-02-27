@@ -13,6 +13,7 @@ description: >-
   * [:tractor: ビルドファイルを用意する．](development.md#tractor-ビルドファイルを用意する)
   * [:building_construction: CIを整備する．](development.md#building_constructionci-を整備する)
   * [:desert: テストデータを準備する．](development.md#desert-テストデータを準備する)
+  * [:name_badge: バッジを貼ろう](development.md#name_badge-バッジを貼ろう)
   * [:hatching_chick: プログラムを書き始める．](development.md#hatching_chick-プログラムを書き始める)
 * [:package: リリースに向けて](shipping.md)
 * [:closed_book: 用語](terms.md)
@@ -91,6 +92,11 @@ CIの設定が済めば`README.md`に必要なバッジ（少なくとも以下�
 
 これにより，CIをやっている，テストを通している，カバレッジがどの程度であることを利用者に示せることになり，最低限のことをしているとアピールできる．
 
+#### :link: 参考リンク
+
+* [継続的インテグレーション](http://objectclub.jp/community/XP-jp/xp_relate/cont-j)
+* [継続的インテグレーション (CI) とは？](https://circleci.com/ja/continuous-integration/)
+
 ### :airplane: 利用するCIツール
 
 基本的に好きなものを利用すれば良いが，自前で準備する場合，有償でも良い場合，無償で行う場合などがある．著名なCIサービスは次の通り．OSS向けには無料で使えるものが多い．
@@ -104,6 +110,8 @@ GitHubやGitLabには標準機能としてCI/CDが用意されている．
 * [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
 
 自らサーバを立てるのであれば，[Jenkins](https://www.jenkins.io)が古くから使われていて良い．
+また，[Dagger.io](https://dagger.io) はコンテナ環境でCIを実行でき，加えて，
+TypeScript，JavaScript，Python，Goなどの言語でCIスクリプトを書けるため，柔軟な利用が可能である．
 
 いずれのCIサービス/ツールを使うにしろ，行うべき処理をスクリプトとして記述する必要がある．スクリプトの詳細は，各CIサービス/ツールのドキュメントを参照されたい．
 
@@ -140,6 +148,7 @@ GitHubやGitLabには標準機能としてCI/CDが用意されている．
 * [Heroku](https://heroku.com)
 * [netlify](https://www.netlify.com)
 * [vercel](https://vercel.com)
+* [期限の制約なく無料で使えるクラウド「Free Tier」主要サービスまとめ　2023年版](https://www.itmedia.co.jp/news/articles/2307/10/news078.html)
 * [ずっと無料で使えるクラウド「Free Tier」主要サービスまとめ（主にIaaS・PaaS）　2020年版](https://www.itmedia.co.jp/news/articles/2005/13/news069\_2.html)
 
 ## :desert: テストデータを準備する
@@ -155,6 +164,31 @@ GitHubやGitLabには標準機能としてCI/CDが用意されている．
 * [jsonlint](https://github.com/zaach/jsonlint)
 * [markdownlint](https://github.com/DavidAnson/markdownlint)
 * [yamllint](https://github.com/adrienverge/yamllint)
+
+## :name_badge: バッジを貼ろう
+
+[バッジ](terms.md#バッヂbadge)とはプロジェクトのステータスを利用者に一目で示すための画像である．
+例えば，バージョン情報や，ライセンス，テストカバレッジ，CIのステータス，プログラムの品質などを示すことができる．
+多くのGitHub，GitLab のリポジトリの `README.md` に貼られており，そのプロダクトのステータスを示している．
+
+多くの場合，バッジの画像にリンクを貼ることでバッジは成り立つ．
+例えば，バージョン情報やライセンスのバッジは，[shields.io](https://shields.io)などで
+`https://img.shields.io/badge/License-MIT-blue` のようなパラメータを与えることでバッジ画像を生成できる．
+この画像にプロジェクト内のライセンスファイルへのリンク，もしくは OSI のライセンスのページへのリンクを貼ることでバッジは完成する．
+
+例えば，このリポジトリのバッジ（の一部）とそのMarkdownのソースは次の通りである．
+
+[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing\_flows/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.4-green.svg)](https://github.com/tamada/developing\_flows/releases/tag/v1.0.4)
+[![DOI](https://zenodo.org/badge/335323499.svg)](https://zenodo.org/badge/latestdoi/335323499)
+
+```markdown
+[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing\_flows/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.4-green.svg)](https://github.com/tamada/developing\_flows/releases/tag/v1.0.4)
+[![DOI](https://zenodo.org/badge/335323499.svg)](https://zenodo.org/badge/latestdoi/335323499)
+```
+
+また，テストカバレッジやプログラムの品質のバッジは，[coveralls](https://coveralls.io)や[codecov](https://about.codecov.io)などのサービスで生成できる．
 
 ## :hatching_chick: プログラムを書き始める
 

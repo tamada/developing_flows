@@ -86,6 +86,8 @@ DOI（Digial Object Identifier）とは，インターネット上のドキュ�
 
 リリースが作成できれば，宣伝しよう．従来であれば，[http://freecode.com](http://freecode.com) などで広報できたが，2014-06-18 以降アップデートされていない．今日の媒体としては，TwitterなどのSNSや[Hacker News](https://news.ycombinator.com)や[Reddit.com](https://www.reddit.com) などを使うのが良いらしい．
 
+[ProductHunt](https://www.producthunt.com)や[AlternativeTo](https://alternativeto.net)などでも宣伝できるようだ．
+
 * [あなたのプロジェクトのユーザーを見つけよう](https://opensource.guide/ja/finding-users/)
 
 ## Navigation

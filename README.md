@@ -7,8 +7,8 @@ description: >-
 
 # ソフトウェアを作り始める前にすべきこと
 
-[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing\_flows/blob/master/LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.0.3-green.svg)](https://github.com/tamada/developing\_flows/releases/tag/v1.0.3)
+[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://github.com/tamada/developing\_flows/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.4-green.svg)](https://github.com/tamada/developing\_flows/releases/tag/v1.0.4)
 [![DOI](https://zenodo.org/badge/335323499.svg)](https://zenodo.org/badge/latestdoi/335323499)
 [![GitHub Discussion](https://img.shields.io/badge/GitHub-Discussions-blue?logo=github)](https://github.com/tamada/developing\_flows/discussions)
 
@@ -100,8 +100,8 @@ description: >-
 #### :man_office_worker:著者 :woman_office_worker:
 
 * 玉田 春昭（@tamada）
-    * [https://tamada.github.io/](https://tamada.github.io)
-    * [https://tamada.gitbook.io/developing-flows](https://tamada.gitbook.io/developing-flows/)
+  * [https://tamada.github.io/](https://tamada.github.io)
+  * [https://tamada.gitbook.io/developing-flows](https://tamada.gitbook.io/developing-flows/)
 
 #### :thought_balloon: ご意見・感想など
 
@@ -111,7 +111,7 @@ description: >-
 
 #### 引用方法
 
-* 玉田 春昭，"ソフトウェアを作り始める前にすべきこと"，https://github.com/tamada/developing_flows，Dec 26, 2022. 
+* 玉田 春昭，"ソフトウェアを作り始める前にすべきこと"，https://github.com/tamada/developing_flows，Feb 27, 2024. 
 
 [![DOI](https://zenodo.org/badge/335323499.svg)](https://zenodo.org/badge/latestdoi/335323499)
 
@@ -120,13 +120,21 @@ description: >-
   author       = {玉田 春昭},
   title        = {ソフトウェアを作り始める前にすべきこと},
   howpublished = {\url{https://github.com/tamada/developing_flows}},
-  month        = {March},
-  year         = {2021},
+  month        = {Feburaury},
+  year         = {2024},
 }
 ```
 
 #### :pushpin: 編集履歴
 
+* 2024-02-24
+  * [CI/CD環境](https://github.com/tamada/developing_flows/blob/main/development.md#building_construction-ciを整備する)に[Dagger](https://dagger.io)を追加した．
+  * [用語集](terms.md)に[バッジ](terms.md#バッヂbadge)を追加した．
+  * [:black_nib: プログラムを書き始めよう](development.md)に[:name_badge: バッジを貼ろう](development.md#name_badge-バッジを貼ろう)を追加した．
+* 2023-11-04
+  * [ライセンス選択のフローチャート](first.md#フローチャート)を追加した．
+  * [`.gitignore`](first.md#gitignore)で，具体例を書くように更新した．
+  * 色々な箇所の参考リンクを追加した．
 * 2022-12-26
   * 引用方法を記した．
   * v1.0.3 リリース
