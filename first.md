@@ -213,8 +213,10 @@ ChatGPTなどの対話AIが一般化した今日では，[Bing image creator](ht
 
 `ソフトウェア名/README.md`を用意し，概要を書く．この概要は，1行のキャッチフレーズ的なもの（tagline）となぜこれが必要なのか，何をするものなのかの背景を含めた概要の2つを書く．次のような内容の`README.md`を作成することになる．
 
-```
+```markdown
 # ソフトウェア名
+
+バッヂ一覧
 
 1行概要（tagline）
 
@@ -293,7 +295,7 @@ OSが変わったり，異なるOSを利用するユーザが利用するかも�
 ちなみに，Java で書くプロジェクトの場合，著者は次のようなコマンドを実行する．
 
 ```sh
-gibo dump macos linux windows visualstudiocode vim emacs jetbrains netbeans eclipse java gradle > .gitignore
+gibo dump macos linux windows visualstudiocode vim emacs jetbrains netbeans eclipse java maven gradle > .gitignore
 ```
 
 ただし，実行ファイルなど，`gibo`で追加されないもの手作業であっても追加しておく．
