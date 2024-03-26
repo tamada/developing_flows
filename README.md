@@ -129,7 +129,7 @@ description: >-
 
 * 2024-02-24
   * [CI/CD環境](https://github.com/tamada/developing_flows/blob/main/development.md#building_construction-ciを整備する)に[Dagger](https://dagger.io)を追加した．
-  * [用語集](terms.md)に[バッジ](terms.md#バッヂbadge)を追加した．
+  * [用語集](terms.md)に[バッジ](terms.md#バッジbadge)を追加した．
   * [:black_nib: プログラムを書き始めよう](development.md)に[:name_badge: バッジを貼ろう](development.md#name_badge-バッジを貼ろう)を追加した．
 * 2023-11-04
   * [ライセンス選択のフローチャート](first.md#フローチャート)を追加した．
