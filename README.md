@@ -61,22 +61,22 @@ description: >-
 
 私がこれまでに開発したものについては，以下を参照されたい．
 
-* [tamadalab/purplecat](https://github.com/tamadalab/purplecat)
+* [`tamadalab/purplecat`](https://github.com/tamadalab/purplecat)
   * Go, CLI, REST, Docker
   * Mavenプロジェクトの依存ライブラリとそのライセンスを検出する．
-* [tamada/rrh](https://github.com/tamada/rrh)
+* [`tamada/rrh`](https://github.com/tamada/rrh)
   * Go, CLI
   * gitリポジトリ管理ツール．
-* [tamada/pochi](https://github.com/tamada/pochi)
+* [`tamada/pochi`](https://github.com/tamada/pochi)
   * Java, CLI, Docker, Groovy
   * Java向けバースマークツール（Javaアプリの盗用検出ツール）．
-* [tamada/uniq2](https://github.com/tamada/peripherals)
+* [`tamada/uniq2`](https://github.com/tamada/peripherals)
   * Go, CLI, Docker
   * uniqコマンドの別実装や Stream の take や skip のような操作を CLI でもできるようにした．
-* [tamada/fritter](https://github.com/tamada/fritter)
+* [`tamada/fritter`](https://github.com/tamada/fritter)
   * Java, CLI, Docker
   * Javaソースコードの品質チェックツール（[tamada/9rules](https://github.com/tamada/9rules)の後継）．
-* [tamada/btmeister](https://github.com/tamada/btmeister)
+* [`tamada/btmeister`](https://github.com/tamada/btmeister)
   * Rust, CLI, Docker
   * どのようなビルドツールを利用しているのかを判定するツール．
 
